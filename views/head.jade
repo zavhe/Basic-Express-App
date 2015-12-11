@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel="stylesheet", href="/css/style.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,300,700")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+	body
+		.content
+			header
+				nav
+					h1(class="main-logo", alt="zavhe's main logo") #{logo_title}
+					ul
+						li
+							a(href="/") blog
+						li(class="#{selected}")
+							a(href="/portfolio") portfolio
+						li
+							a(href="/contact") contact
+						li
+							a(href="/videos") videos
+				.social-media
+					ul 
+						li
+							a(href="https://weekly.com.br", title="Weekly", target="_blank")
+						li
+							a(href="https://github.com.br/zavhe", target="_blank")
+						li
+							a(href="https://twitter.com.br/zavhe", target="_blank")
+			block content

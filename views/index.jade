@@ -1,0 +1,44 @@
+extends head
+
+block content
+			.posts
+				.post
+					article(class="post-article")
+						h2(class="title") Closures em Profundidade
+						p(Class="abstract") Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur.  
+						a(href="/blog/posts/2") ler mais...
+				.post
+					article(class="post-article")
+						h2(class="title") React, Flux... isso é de comer?
+						p(Class="abstract") Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur.  
+						a(href="/blog/posts/2") ler mais...
+				.post
+					article(class="post-article")
+						h2(class="title") Hasteamento em JavaScript
+						p(Class="abstract") Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur.  
+						a(href="/blog/posts/2") ler mais...
+				.post
+					article(class="post-article")
+						h2(class="title") Protótipo em JavaScript
+						p(Class="abstract") Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adisciping elit. Lorem ipsum dolor sit amet consectetur.  
+						a(href="/blog/posts/2") ler mais...
+			.bio
+				.social-media
+					ul 
+						li
+							a(href="https://weekly.com.br", title="Weekly", target="_blank")
+						li
+							a(href="https://github.com.br/zavhe", target="_blank")
+						li
+							a(href="https://twitter.com.br/zavhe", target="_blank")
+				span
+				p Henrique é um desenvolver Javascript que adora desafios. Já escreveu três livros sobre o assunto e atualmente é professor da <a href="weekly.com.br">weekly.com.br</a>, escola de cursos online.
+				if cookie
+					b Sorte do dia: #{cookie}
+			.newsletter
+				form
+					fieldset
+						legend receba informações, dicas e notícias de JS
+						input(type="email", name="email", placeholder="seu e-mail")
+						input(type="submit", name="submit", placeholder="Enviar")
+
